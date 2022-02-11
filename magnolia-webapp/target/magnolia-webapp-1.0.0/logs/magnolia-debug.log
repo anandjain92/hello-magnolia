@@ -983,3 +983,292 @@ INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:02:
 INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:11:46 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
 INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:16:02 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
 WARN  info.magnolia.ui.framework.ioc.UiComponentProvider 11.02.2022 14:20:25 -- Attempted to cache a UIComponent (PageDetailSubApp) instance in bean store containing another UIComponent (View)
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-35 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-35
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-35 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-35 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-11 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-11
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-11 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-11 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-23 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-23
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-23 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-23 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-27 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-27
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-27 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-27 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-31 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-31
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-31 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-31 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-86 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-86
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-86 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-86 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-68 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-68
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-68 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-68 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-80 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-80
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-80 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-80 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-15 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-15
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-15 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-15 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-19 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-19
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-19 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-19 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- Attempt to close session-74 after it has already been closed. Please review your code for proper session management.
+java.lang.Exception: Stack trace of the duplicate attempt to close session-74
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:280) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.security.user.UserManagerImpl.loggedOut(UserManagerImpl.java:1166) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.notifyLoggedOut(SessionImpl.java:567) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:1021) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.doDispose(RepositoryImpl.java:2243) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl$WorkspaceInfo.dispose(RepositoryImpl.java:2197) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1124) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+WARN  org.apache.jackrabbit.core.session.SessionState 11.02.2022 16:32:46 -- session-74 has already been closed. See the attached exception for a trace of where this session was closed.
+java.lang.Exception: Stack trace of  where session-74 was originally closed
+	at org.apache.jackrabbit.core.session.SessionState.close(SessionState.java:275) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.SessionImpl.logout(SessionImpl.java:983) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.XASessionImpl.logout(XASessionImpl.java:394) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.doShutdown(RepositoryImpl.java:1112) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.RepositoryImpl.shutdown(RepositoryImpl.java:1075) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository.shutdown(BindableRepository.java:259) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.jndi.BindableRepository$1.run(BindableRepository.java:120) [jackrabbit-core-2.20.4.jar:2.20.4]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module content-importer
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module ui-admincentral
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module admincentral
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module task-management
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module magnolia-usage-metrics
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:46 -- Stopping module scheduler
+INFO  info.magnolia.module.scheduler.SchedulerModule 11.02.2022 16:32:47 -- Waiting up to 30 seconds for scheduled jobs to stop...
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module ui-framework
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module virtual-uri
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module ui-framework-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module rendering
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module periscope-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module content-types
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module cache
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:resources:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:userroles:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:website:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:config:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:default:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:tasks:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [defaultPageCache:usergroups:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:config:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:userroles:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:website:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:resources:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:default:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:tasks:/] 
+INFO  info.magnolia.module.cache.AbstractListeningFlushPolicy 11.02.2022 16:32:48 -- Unregistering event listener mapped to key [uuid-key-mapping:usergroups:/] 
+DEBUG class org.ehcache.core.Ehcache-defaultPageCache 11.02.2022 16:32:48 -- Close successful.
+DEBUG class org.ehcache.core.Ehcache-uuid-key-mapping 11.02.2022 16:32:48 -- Close successful.
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module config
+INFO  info.magnolia.dirwatch.DirectoryWatcherService 11.02.2022 16:32:48 -- DirectoryWatcherService terminated.
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module rest-integration
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 16:32:48 -- Stopping module publishing-core
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 16:32:48 -- Shutting down JCR
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 16:32:48 -- Shutting down repository bound to 'magnolia-webapp-1.0.0'
