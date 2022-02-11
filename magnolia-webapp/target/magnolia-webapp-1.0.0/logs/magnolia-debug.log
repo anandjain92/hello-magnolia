@@ -1,0 +1,985 @@
+INFO  info.magnolia.init.MagnoliaServletContextListener 11.02.2022 11:43:00 -- Property sources loaded: [DefaultMagnoliaConfigurationProperties with sources: [SystemPropertySource][EnvironmentPropertySource][ServletContextPropertySource from WEB-INF/config/default/magnolia.properties][ModulePropertiesSource from modules [core, freemarker-support, periscope-api, speech-recognizer, ce-product-descriptor, publishing-core, resource-loader, rest-integration, config, i18n, publishing-receiver, publishing-sender, cache, content-types, periscope-core, rendering, ui-framework-core, virtual-uri, ehcache3, tasks-app, templating, ui-framework-jcr, resources, ui-framework, magnolia-resources-templating, scheduler, magnolia-usage-metrics, spa-rendering, task-management, admincentral, ui-admincentral, about-app, content-importer, definitions-app, jcr-browser, lang-fi, lang-id, lang-nl, lang-no, lang-pt, lang-pt_BR, lang-ru, lang-sk, lang-sq, lang-sv, lang-tr, lang-zh_TW, pages-app, publishing-app, resources-app, security-app, ui-contentapp, lang-cs, lang-de, lang-es, lang-fr, lang-hr, lang-it, lang-ja, lang-ko, lang-pl, lang-zh_CN, webapp]][InitPathsPropertySource]]
+INFO  info.magnolia.cms.beans.config.ConfigLoader 11.02.2022 11:43:00 -- Initializing content repositories
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:00 -- Loading JCR
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:00 -- Loading JCR magnolia
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:00 -- Loading repository at /home/anand/projects/magnolia/magnolia/repositories/magnolia (config file: /home/anand/projects/magnolia/magnolia/magnolia-webapp/target/magnolia-webapp-1.0.0/WEB-INF/config/repo-conf/jackrabbit-bundle-h2-search.xml) - cluster id: "<unset>"
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:04 -- Registering prefix [mgnl] with URI http://www.magnolia.info/jcr/mgnl
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:06 -- Loading workspace mgnlVersion (logical name magnolia-mgnlVersion).
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:06 -- Loading workspace default (logical name default).
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:06 -- Loading workspace mgnlSystem (logical name magnolia-mgnlSystem).
+INFO  info.magnolia.context.LifeTimeJCRSessionUtil 11.02.2022 11:43:12 -- Will handle lifetime sessions because the system context is of type interface info.magnolia.context.ThreadDependentSystemContext
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:12 -- /server/rendering/freemarker does not exist, will return a new instance of class info.magnolia.freemarker.FreemarkerConfig.
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:12 -- /server/auditLogging does not exist, will return a new instance of class info.magnolia.audit.AuditLoggingManager.
+INFO  info.magnolia.module.webapp.WebappVersionHandler 11.02.2022 11:43:13 -- Content was not found in the repository, will bootstrap web-app.
+INFO  info.magnolia.module.ui.ModuleManagerWebUI 11.02.2022 11:43:13 -- 
+*********************************************************************************************************
+*                                                                                                       *
+* Magnolia needs module updates or installs, point your browser to your Magnolia instance and confirm ! *
+*                                                                                                       *
+*********************************************************************************************************
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:13 -- Loading i18n configuration - /server/i18n/system
+WARN  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:13 -- /server/i18n/system does not exist yet; skipping.
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:13 -- Registering event listener for i18n
+INFO  info.magnolia.cms.beans.config.MIMEMapping 11.02.2022 11:43:13 -- Initializing MIMEMapping from /server/MIMEMapping
+WARN  info.magnolia.cms.beans.config.MIMEMapping 11.02.2022 11:43:13 -- No MIMEMapping info configured at /server/MIMEMapping
+INFO  info.magnolia.cms.beans.config.MIMEMapping 11.02.2022 11:43:13 -- Registering event listener for MIMEMapping
+INFO  info.magnolia.cms.beans.config.ConfigLoader 11.02.2022 11:43:13 -- Configuration loaded (took 12 seconds)
+INFO  info.magnolia.cms.filters.FilterManagerImpl 11.02.2022 11:43:13 -- Initializing filters
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:13 -- Initializing filter [Wrapper for Resources Servlet servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:13 -- Initializing filter [install]
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:22 -- Loading workspace resources (logical name resources).
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:22 -- Custom node types registered using /mgnl-nodetypes/tasks-nodetypes.xml
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:22 -- Registering nodetype {http://www.magnolia.info/jcr/mgnl}task on repository magnolia
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:22 -- Loading workspace tasks (logical name tasks).
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:23 -- Custom node types registered using /mgnl-nodetypes/magnolia-message-nodetypes.cnd
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:23 -- Loading workspace messages (logical name messages).
+INFO  info.magnolia.jackrabbit.ProviderImpl 11.02.2022 11:43:23 -- Custom node types registered using /mgnl-nodetypes/magnolia-favorite-nodetypes.cnd
+INFO  info.magnolia.repository.DefaultRepositoryManager 11.02.2022 11:43:23 -- Loading workspace profiles (logical name profiles).
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+ERROR org.apache.jackrabbit.core.ItemManager 11.02.2022 11:43:24 -- b5c5ed2f-5ec9-42e5-a7d0-5c5f65fc0147: failed to determine path to
+ERROR info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Failed to load i18n configuration - /server/i18n/system
+java.lang.RuntimeException: Can't wrap node [node b5c5ed2f-5ec9-42e5-a7d0-5c5f65fc0147]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.<init>(ExtendingNodeWrapper.java:144) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.<init>(ExtendingNodeWrapper.java:93) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.wrapIfNeeded(ExtendingNodeWrapper.java:334) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.wrapNode(ExtendingNodeWrapper.java:290) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.wrapNodes(ExtendingNodeWrapper.java:340) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.getNodes(ExtendingNodeWrapper.java:217) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.getNodes(ExtendingNodeWrapper.java:193) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.node2bean.impl.Node2BeanTransformerImpl.getChildren(Node2BeanTransformerImpl.java:235) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.node2bean.impl.Node2BeanProcessorImpl.toMap(Node2BeanProcessorImpl.java:278) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.node2bean.impl.Node2BeanProcessorImpl.setProperties(Node2BeanProcessorImpl.java:251) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.DefaultMessagesManager.load(DefaultMessagesManager.java:199) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.DefaultMessagesManager.reload(DefaultMessagesManager.java:252) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.DefaultMessagesManager.lambda$registerEventListener$0(DefaultMessagesManager.java:230) ~[magnolia-core-6.2.16.jar:?]
+	at org.apache.jackrabbit.core.observation.EventConsumer.consumeEvents(EventConsumer.java:249) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.observation.ObservationDispatcher.run(ObservationDispatcher.java:160) [jackrabbit-core-2.20.4.jar:2.20.4]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: javax.jcr.InvalidItemStateException: Item does not exist anymore: b5c5ed2f-5ec9-42e5-a7d0-5c5f65fc0147
+	at org.apache.jackrabbit.core.ItemImpl.itemSanityCheck(ItemImpl.java:116) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.ItemImpl.sanityCheck(ItemImpl.java:104) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at org.apache.jackrabbit.core.NodeImpl.hasProperty(NodeImpl.java:2456) ~[jackrabbit-core-2.20.4.jar:2.20.4]
+	at info.magnolia.jcr.wrapper.DelegateNodeWrapper.hasProperty(DelegateNodeWrapper.java:304) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.DelegateNodeWrapper.hasProperty(DelegateNodeWrapper.java:304) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.DelegateNodeWrapper.hasProperty(DelegateNodeWrapper.java:304) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.DelegateNodeWrapper.hasProperty(DelegateNodeWrapper.java:304) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.DelegateNodeWrapper.hasProperty(DelegateNodeWrapper.java:304) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.jcr.wrapper.ExtendingNodeWrapper.<init>(ExtendingNodeWrapper.java:103) ~[magnolia-core-6.2.16.jar:?]
+	... 15 more
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.i18n.DefaultMessagesManager 11.02.2022 11:43:24 -- Loading i18n configuration - /server/i18n/system
+INFO  info.magnolia.cms.beans.config.MIMEMapping 11.02.2022 11:43:25 -- Reloading MIMEMapping from /server/MIMEMapping
+WARN  info.magnolia.module.InstallContextImpl 11.02.2022 11:43:25 -- [13/436 tasks - Magnolia Core Module (version 6.2.16)]> Please set the config:/server/defaultBaseUrl property to a full URL to be used when generating absolute URLs for external systems.
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:25 -- Re-loaded info.magnolia.cms.security.SecuritySupport from node /server/security
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:25 -- Re-loaded info.magnolia.cms.security.SecuritySupport from node /server/security
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:26 -- Re-loaded info.magnolia.audit.AuditLoggingManager from node /server/auditLogging
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:26 -- Re-loaded info.magnolia.freemarker.FreemarkerConfig from node /server/rendering/freemarker
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:28 -- Deleted already existing node for bootstrapping: /modules/rendering/renderers/freemarker/contextAttributes
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:28 -- Deleted already existing node for bootstrapping: /server/filters/virtualURI
+INFO  info.magnolia.objectfactory.ObservedComponentFactory 11.02.2022 11:43:29 -- Re-loaded info.magnolia.freemarker.FreemarkerConfig from node /server/rendering/freemarker
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:29 -- Deleted already existing node for bootstrapping: /modules/cache/config/contentCaching/defaultPageCache/browserCachePolicy/policies/dontCacheSPAResources
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:30 -- Deleted already existing node for bootstrapping: /server/filters/uriSecurity/bypasses/login
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:30 -- Deleted already existing node for bootstrapping: /modules/ui-admincentral/commands/default/delete
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:31 -- Deleted already existing node for bootstrapping: /server/filters/securityCallback/clientCallbacks/form
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:31 -- Deleted already existing node for bootstrapping: /modules/ui-admincentral/messageViews/longRunning
+WARN  info.magnolia.importexport.BootstrapUtil 11.02.2022 11:43:32 -- Deleted already existing node for bootstrapping: /modules/ui-admincentral/apps/configuration/subApps/browser/actions/saveItemProperty
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Trying to initialize repositories from: 
+    /home/anand/projects/magnolia/magnolia/magnolia-webapp/target/magnolia-webapp-1.0.0/WEB-INF/bootstrap/author
+    /home/anand/projects/magnolia/magnolia/magnolia-webapp/target/magnolia-webapp-1.0.0/WEB-INF/bootstrap/common
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [magnolia-mgnlSystem] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [website] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [users] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [resources] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [config] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [userroles] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [messages] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [tasks] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [magnolia-mgnlVersion] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [default] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [profiles] has been initialized.
+INFO  info.magnolia.importexport.Bootstrapper 11.02.2022 11:43:33 -- Repository [usergroups] has been initialized.
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module freemarker-support
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module periscope-api
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module speech-recognizer
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ce-product-descriptor
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module publishing-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module resource-loader
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module rest-integration
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module config
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module i18n
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module publishing-receiver
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module publishing-sender
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module cache
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module content-types
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module periscope-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module rendering
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ui-framework-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module virtual-uri
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ehcache3
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module tasks-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module templating
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ui-framework-jcr
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module resources
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ui-framework
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module magnolia-resources-templating
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module scheduler
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module magnolia-usage-metrics
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module spa-rendering
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module task-management
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module admincentral
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ui-admincentral
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module about-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module content-importer
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module definitions-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module jcr-browser
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-fi
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-id
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-nl
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-no
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-pt
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-pt_BR
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-ru
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-sk
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-sq
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-sv
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-tr
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-zh_TW
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module pages-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module publishing-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module resources-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module security-app
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module ui-contentapp
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-cs
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-de
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-es
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-fr
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-hr
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-it
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-ja
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-ko
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-pl
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module lang-zh_CN
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:37 -- Initializing module webapp
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:38 -- Setting up ModuleYamlConfigurationSource to load Object definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:38 -- Registered definition from YAML file [/periscope-core/config.yaml]: [module] definition [periscope-core] with reference id: [periscope-core] from module [periscope-core] at [periscope-core/config]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:39 -- Registered definition from YAML file [/templating/config.yaml]: [module] definition [templating] with reference id: [templating] from module [templating] at [templating/config]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:39 -- Registered definition from YAML file [/admincentral/config.yaml]: [module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]
+INFO  info.magnolia.dirwatch.DirectoryWatcherService 11.02.2022 11:43:39 -- Starting DirectoryWatcher
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:39 -- File based definition decorator resolved from [/jcr-browser/decorations/admincentral/config.yaml] and will be added to [modules] registry
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:39 -- Applied YAML file based decorator from [/jcr-browser/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:39 -- File based definition decorator resolved from [/pages-app/decorations/admincentral/config.yaml] and will be added to [modules] registry
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:39 -- Applied YAML file based decorator from [/pages-app/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- File based definition decorator resolved from [/resources-app/decorations/admincentral/config.yaml] and will be added to [modules] registry
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:40 -- Applied YAML file based decorator from [/resources-app/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- File based definition decorator resolved from [/tasks-app/decorations/admincentral/config.yaml] and will be added to [modules] registry
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:40 -- Applied YAML file based decorator from [/tasks-app/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:40 -- Applied YAML file based decorator from [/jcr-browser/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:40 -- Applied YAML file based decorator from [/pages-app/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:43:40 -- Applied YAML file based decorator from [/resources-app/decorations/admincentral/config.yaml] to definition provider [[module] definition [admincentral] with reference id: [admincentral] from module [admincentral] at [admincentral/config]]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module publishing-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module rest-integration
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- Setting up YamlConfigurationSource to load EndpointDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/spa-rendering/restEndpoints/templateAnnotations/templateAnnotationEndpoint.yaml]: [restEndpoint] definition [templateAnnotationEndpoint] with reference id: [templateAnnotations/templateAnnotationEndpoint] from module [spa-rendering] at [templateAnnotations/templateAnnotationEndpoint]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/spa-rendering/restEndpoints/templateDefinitions/templateDefinitionEndpoint.yaml]: [restEndpoint] definition [templateDefinitionEndpoint] with reference id: [templateDefinitions/templateDefinitionEndpoint] from module [spa-rendering] at [templateDefinitions/templateDefinitionEndpoint]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module config
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module cache
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module content-types
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- Setting up YamlConfigurationSource to load ContentTypeDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/pages-app/contentTypes/page.yaml]: [contentType] definition [page] with reference id: [page] from module [pages-app] at [page]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module periscope-core
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- Setting up YamlConfigurationSource to load SearchResultSupplierDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/periscope-core/searchResultSuppliers/magnoliaDocumentation.yaml]: [searchResultSupplier] definition [magnoliaDocumentation] with reference id: [magnoliaDocumentation] from module [periscope-core] at [magnoliaDocumentation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/searchResultSuppliers/apps.yaml]: [searchResultSupplier] definition [apps] with reference id: [apps] from module [admincentral] at [apps]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/ui-admincentral/searchResultSuppliers/configuration.yaml]: [searchResultSupplier] definition [configuration] with reference id: [configuration] from module [ui-admincentral] at [configuration]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/pages-app/searchResultSuppliers/pages-app.yaml]: [searchResultSupplier] definition [pages-app] with reference id: [pages-app] from module [pages-app] at [pages-app]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- Setting up YamlConfigurationSource to load OperationDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/operations/appNavigation.yaml]: [operation] definition [appNavigation] with reference id: [appNavigation] from module [admincentral] at [appNavigation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/operations/contentNavigation.yaml]: [operation] definition [contentNavigation] with reference id: [contentNavigation] from module [admincentral] at [contentNavigation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/operations/externalNavigation.yaml]: [operation] definition [externalNavigation] with reference id: [externalNavigation] from module [admincentral] at [externalNavigation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/operations/internalNavigation.yaml]: [operation] definition [internalNavigation] with reference id: [internalNavigation] from module [admincentral] at [internalNavigation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/operations/nodeNavigation.yaml]: [operation] definition [nodeNavigation] with reference id: [nodeNavigation] from module [admincentral] at [nodeNavigation]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:40 -- Setting up YamlConfigurationSource to load QuerySnifferDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/querySniffers/findContent.yaml]: [querySniffer] definition [findContent] with reference id: [findContent] from module [admincentral] at [findContent]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/querySniffers/findNode.yaml]: [querySniffer] definition [findNode] with reference id: [findNode] from module [admincentral] at [findNode]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:40 -- Registered definition from YAML file [/admincentral/querySniffers/openApp.yaml]: [querySniffer] definition [openApp] with reference id: [openApp] from module [admincentral] at [openApp]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:40 -- Starting module rendering
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:41 -- Setting up YamlConfigurationSource to load Renderer definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/spa-rendering/renderers/spa.yaml]: [renderer] definition [spa] with reference id: [spa] from module [spa-rendering] at [spa]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:41 -- Setting up YamlConfigurationSource to load TemplateDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/pages-app/templates/deleted.yaml]: [template] definition [deleted] with reference id: [pages-app:deleted] from module [pages-app] at [deleted]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:41 -- Starting module ui-framework-core
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:41 -- Starting module virtual-uri
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:41 -- Setting up YamlConfigurationSource to load VirtualUriMapping definitions from resources
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:41 -- Starting module ui-framework
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:41 -- Setting up YamlConfigurationSource to load FieldTypeDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/basicUpload.yaml]: [fieldType] definition [basicUpload] with reference id: [basicUpload] from module [ui-framework] at [basicUpload]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/checkbox.yaml]: [fieldType] definition [checkbox] with reference id: [checkbox] from module [ui-framework] at [checkbox]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/code.yaml]: [fieldType] definition [code] with reference id: [code] from module [ui-framework] at [code]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/composite.yaml]: [fieldType] definition [composite] with reference id: [composite] from module [ui-framework] at [composite]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/date.yaml]: [fieldType] definition [date] with reference id: [date] from module [ui-framework] at [date]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/hidden.yaml]: [fieldType] definition [hidden] with reference id: [hidden] from module [ui-framework] at [hidden]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/link.yaml]: [fieldType] definition [link] with reference id: [link] from module [ui-framework] at [link]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/linkFieldSelection.yaml]: [fieldType] definition [linkFieldSelection] with reference id: [linkFieldSelection] from module [ui-framework] at [linkFieldSelection]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/multiValue.yaml]: [fieldType] definition [multiValue] with reference id: [multiValue] from module [ui-framework] at [multiValue]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/nodeTypeSelect.yaml]: [fieldType] definition [nodeTypeSelect] with reference id: [nodeTypeSelect] from module [ui-framework] at [nodeTypeSelect]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/optionGroup.yaml]: [fieldType] definition [optionGroup] with reference id: [optionGroup] from module [ui-framework] at [optionGroup]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/password.yaml]: [fieldType] definition [password] with reference id: [password] from module [ui-framework] at [password]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/richText.yaml]: [fieldType] definition [richText] with reference id: [richText] from module [ui-framework] at [richText]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/select.yaml]: [fieldType] definition [select] with reference id: [select] from module [ui-framework] at [select]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/static.yaml]: [fieldType] definition [static] with reference id: [static] from module [ui-framework] at [static]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/switchable.yaml]: [fieldType] definition [switchable] with reference id: [switchable] from module [ui-framework] at [switchable]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/text.yaml]: [fieldType] definition [text] with reference id: [text] from module [ui-framework] at [text]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/twinColSelect.yaml]: [fieldType] definition [twinColSelect] with reference id: [twinColSelect] from module [ui-framework] at [twinColSelect]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-framework/fieldTypes/workbench.yaml]: [fieldType] definition [workbench] with reference id: [workbench] from module [ui-framework] at [workbench]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:41 -- Registered definition from YAML file [/ui-admincentral/fieldTypes/timeZone.yaml]: [fieldType] definition [timeZone] with reference id: [timeZone] from module [ui-admincentral] at [timeZone]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:42 -- Setting up YamlConfigurationSource to load DialogDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/chooser.yaml]: [dialog] definition [chooser] with reference id: [ui-framework-jcr:chooser] from module [ui-framework-jcr] at [chooser]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/import.yaml]: [dialog] definition [import] with reference id: [ui-framework-jcr:import] from module [ui-framework-jcr] at [import]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/move.yaml]: [dialog] definition [move] with reference id: [ui-framework-jcr:move] from module [ui-framework-jcr] at [move]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/multiChooser.yaml]: [dialog] definition [multiChooser] with reference id: [ui-framework-jcr:multiChooser] from module [ui-framework-jcr] at [multiChooser]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/rename.yaml]: [dialog] definition [rename] with reference id: [ui-framework-jcr:rename] from module [ui-framework-jcr] at [rename]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/restoreVersion.yaml]: [dialog] definition [restoreVersion] with reference id: [ui-framework-jcr:restoreVersion] from module [ui-framework-jcr] at [restoreVersion]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/ui-framework-jcr/dialogs/versions.yaml]: [dialog] definition [versions] with reference id: [ui-framework-jcr:versions] from module [ui-framework-jcr] at [versions]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/admincentral/dialogs/userMenu.yaml]: [dialog] definition [userMenu] with reference id: [admincentral:userMenu] from module [admincentral] at [userMenu]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/jcr-browser/dialogs/addNode.yaml]: [dialog] definition [addNode] with reference id: [jcr-browser:addNode] from module [jcr-browser] at [addNode]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/jcr-browser/dialogs/editProperty.yaml]: [dialog] definition [editProperty] with reference id: [jcr-browser:editProperty] from module [jcr-browser] at [editProperty]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/jcr-browser/dialogs/rename.yaml]: [dialog] definition [rename] with reference id: [jcr-browser:rename] from module [jcr-browser] at [rename]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/pages-app/dialogs/changePageTemplate.yaml]: [dialog] definition [changePageTemplate] with reference id: [pages-app:changePageTemplate] from module [pages-app] at [changePageTemplate]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/pages-app/dialogs/chooser.yaml]: [dialog] definition [chooser] with reference id: [pages-app:chooser] from module [pages-app] at [chooser]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/pages-app/dialogs/componentTemplate.yaml]: [dialog] definition [componentTemplate] with reference id: [pages-app:componentTemplate] from module [pages-app] at [componentTemplate]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/pages-app/dialogs/createPage.yaml]: [dialog] definition [createPage] with reference id: [pages-app:createPage] from module [pages-app] at [createPage]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:42 -- Registered definition from YAML file [/pages-app/dialogs/move.yaml]: [dialog] definition [move] with reference id: [pages-app:move] from module [pages-app] at [move]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/pages-app/dialogs/newComponent.yaml]: [dialog] definition [newComponent] with reference id: [pages-app:newComponent] from module [pages-app] at [newComponent]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/pages-app/dialogs/renamePage.yaml]: [dialog] definition [renamePage] with reference id: [pages-app:renamePage] from module [pages-app] at [renamePage]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/pages-app/dialogs/versions.yaml]: [dialog] definition [versions] with reference id: [pages-app:versions] from module [pages-app] at [versions]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/resources-app/dialogs/addFile.yaml]: [dialog] definition [addFile] with reference id: [resources-app:addFile] from module [resources-app] at [addFile]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/resources-app/dialogs/addFolder.yaml]: [dialog] definition [addFolder] with reference id: [resources-app:addFolder] from module [resources-app] at [addFolder]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/resources-app/dialogs/chooser.yaml]: [dialog] definition [chooser] with reference id: [resources-app:chooser] from module [resources-app] at [chooser]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/resources-app/dialogs/upload.yaml]: [dialog] definition [upload] with reference id: [resources-app:upload] from module [resources-app] at [upload]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:43 -- Registered definition from YAML file [/resources-app/dialogs/versions.yaml]: [dialog] definition [versions] with reference id: [resources-app:versions] from module [resources-app] at [versions]
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:43 -- File based definition decorator resolved from [/ui-admincentral/decorations/ui-admincentral/dialogs/editUserProfile.form.tabs.preferences.fields.yaml] and will be added to [dialogs] registry
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:44 -- Setting up YamlConfigurationSource to load AppDescriptor definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:44 -- Registered definition from YAML file [/tasks-app/apps/tasks-app.yaml]: [app] definition [tasks-app] with reference id: [tasks-app] from module [tasks-app] at [tasks-app]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:44 -- Registered definition from YAML file [/admincentral/apps/notifications.yaml]: [app] definition [notifications] with reference id: [notifications] from module [admincentral] at [notifications]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:44 -- Registered definition from YAML file [/definitions-app/apps/definitions-app.yaml]: [app] definition [definitions-app] with reference id: [definitions-app] from module [definitions-app] at [definitions-app]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:44 -- Registered definition from YAML file [/jcr-browser/apps/jcr-browser-app.yaml]: [app] definition [jcr-browser-app] with reference id: [jcr-browser-app] from module [jcr-browser] at [jcr-browser-app]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:45 -- Registered definition from YAML file [/pages-app/apps/pages-app.yaml]: [app] definition [pages-app] with reference id: [pages-app] from module [pages-app] at [pages-app]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:45 -- Registered definition from YAML file [/publishing-app/apps/publishing.yaml]: [app] definition [publishing] with reference id: [publishing] from module [publishing-app] at [publishing]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:45 -- Registered definition from YAML file [/resources-app/apps/resources.yaml]: [app] definition [resources] with reference id: [resources] from module [resources-app] at [resources]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module scheduler
+INFO  info.magnolia.module.scheduler.SchedulerModule 11.02.2022 11:43:45 -- Job cleanTempFiles added [0 0 0/12 1/1 * ? *]. Will fire for the first time on Fri Feb 11 at 12:00:00 CET 2022
+INFO  info.magnolia.module.scheduler.SchedulerModule 11.02.2022 11:43:45 -- Job configScan added [0 0 0 * * ?]. Will fire for the first time on Sat Feb 12 at 00:00:00 CET 2022
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module magnolia-usage-metrics
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module task-management
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module admincentral
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module ui-admincentral
+INFO  info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource 11.02.2022 11:43:45 -- Setting up YamlConfigurationSource to load ItemViewDefinition definitions from resources
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 11:43:45 -- Registered definition from YAML file [/admincentral/messageViews/default.yaml]: [messageView] definition [default] with reference id: [admincentral:default] from module [admincentral] at [default]
+INFO  info.magnolia.module.ModuleManagerImpl 11.02.2022 11:43:45 -- Starting module content-importer
+INFO  info.magnolia.content.observer.ContentImporterModule 11.02.2022 11:43:45 -- Content bootstrap directory is not defined with property of 'magnolia.content.bootstrap.dir' in magnolia.properties file, therefore observation is not started.
+WARN  info.magnolia.cms.util.WorkspaceObservingManager 11.02.2022 11:43:45 -- A deprecated class or method was used: Use reload() instead. Check the following trace: info.magnolia.commands.CommandsManager.reload(CommandsManager.java:269), info.magnolia.cms.util.WorkspaceObservingManager.start(WorkspaceObservingManager.java:91), the full stacktrace will be logged in debug mode in the info.magnolia.cms.util.DeprecationUtil category.
+WARN  info.magnolia.cms.util.DeprecationUtil 11.02.2022 11:43:45 -- A deprecated class or method was used: Use reload() instead. Check the following trace: info.magnolia.commands.CommandsManager.reload(CommandsManager.java:269), info.magnolia.cms.util.WorkspaceObservingManager.start(WorkspaceObservingManager.java:91), the full stacktrace will be logged in debug mode in the info.magnolia.cms.util.DeprecationUtil category.
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:45 -- Catalog [default] registered: [info.magnolia.commands.MgnlCatalog: unpublish, publish, activate, deactivate]
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Catalog [versioned] registered: [info.magnolia.commands.MgnlCatalog: unpublish, publish, activate, deactivate]
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Catalog [cache] registered: [info.magnolia.commands.MgnlCatalog: flushNamedCache, flushByUUID, flushAll]
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Catalog [resources] registered: [info.magnolia.commands.MgnlCatalog: versionResources]
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [importZip] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [cleanTempFiles] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [configScan] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [exportYaml] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [import] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [markAsDeleted] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [restorePreviousVersion] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [export] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Adding new command [delete] to already registered catalog [default]...
+INFO  info.magnolia.commands.CommandsManager 11.02.2022 11:43:46 -- Catalog [pages] registered: [info.magnolia.commands.MgnlCatalog: markAsDeleted]
+DEBUG class org.ehcache.core.Ehcache-defaultPageCache 11.02.2022 11:43:46 -- Initialize successful.
+DEBUG class org.ehcache.core.Ehcache-uuid-key-mapping 11.02.2022 11:43:46 -- Initialize successful.
+INFO  info.magnolia.cms.filters.FilterManagerImpl 11.02.2022 11:43:47 -- Initializing filters
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [context]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [contentType]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [multipartRequest]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [unicodeNormalization]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [csrfTokenSecurity]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [csrfLogin]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [csrfAuthenticated]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [login]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [publishing]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [gzip]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [channel]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [logout]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [securityCallback]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [csrfSecurity]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [cors]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [internal]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [uriSecurity]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [range]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [i18n]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [cache]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [virtualURI]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [servlets]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [Wrapper for RestDispatcherServlet servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [Wrapper for ResourcesServlet servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:47 -- Initializing filter [Wrapper for Admincentral servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [Wrapper for VaadinStatic servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [Wrapper for Admincentral-m5 servlet]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [cms]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [repositoryMapping]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [contentSecurity]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [aggregator]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [modelExecution]
+INFO  info.magnolia.cms.filters.CompositeFilter 11.02.2022 11:43:48 -- Initializing filter [rendering]
+INFO  info.magnolia.i18nsystem.DefaultMessageBundlesLoader 11.02.2022 11:45:06 -- 
+------------------------------------
+Duplicated keys found while loading message bundles from ./mgnl-i18n :
+------------------------------------
+Number of duplicates based on key pattern <key>_<locale>_<bundle-url>: 142
+Number of duplicates based on key pattern <key>_<locale>: 142
+Number of duplicates based on key pattern <key>: 94
+To get more details concerning the keys, raise the log level to 'DEBUG' for info.magnolia.i18nsystem.DefaultMessageBundlesLoader.
+If you encounter a large number of duplicates, it's possible that you are running in a development environment where you have multiple copies of the web-apps in the overlays folder of your web-app.
+URLs of the affected files creating duplicate entries:
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties,file}]}
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties,file}]}
+LayeredResource{path='/mgnl-i18n/scheduler_messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/scheduler_messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_zh_CN.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_zh_CN.properties,file}]}
+LayeredResource{path='/personalization-pages/i18n/personalization-pages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/personalization-pages/i18n/personalization-pages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_es.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_fr.properties,file}]}
+LayeredResource{path='/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties,file}]}
+LayeredResource{path='/travel-demo/i18n/module-travel-demo-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo/i18n/module-travel-demo-messages_ko.properties,file}]}
+LayeredResource{path='/ui-admincentral/i18n/ui-admincentral-messages_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-admincentral/i18n/ui-admincentral-messages_en.properties,file}]}
+LayeredResource{path='/ui-form/i18n/module-ui-form-backend_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-form/i18n/module-ui-form-backend_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_de.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_es.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_fr.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_it.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_it.properties,file}]}
+------------------------------------
+INFO  info.magnolia.i18nsystem.DefaultMessageBundlesLoader 11.02.2022 11:45:06 -- Starting monitoring of info.magnolia.resourceloader.layered.LayeredResourceOrigin@5f02897c to load translation files
+INFO  info.magnolia.config.source.yaml.decoration.YamlDefinitionDecorator 11.02.2022 11:45:18 -- Applied YAML file based decorator from [/ui-admincentral/decorations/ui-admincentral/dialogs/editUserProfile.form.tabs.preferences.fields.yaml] to definition provider [[dialog] definition [editUserProfile] with reference id: [ui-admincentral:editUserProfile] from module [ui-admincentral] at [editUserProfile]]
+INFO  info.magnolia.module.scheduler.CommandJob 11.02.2022 12:00:00 -- Starting job [cleanTempFiles]... 
+INFO  info.magnolia.module.scheduler.CommandJob 11.02.2022 12:00:00 -- Job executed successfully [cleanTempFiles]
+INFO  info.magnolia.i18nsystem.DefaultMessageBundlesLoader 11.02.2022 12:44:15 -- 
+------------------------------------
+Duplicated keys found while loading message bundles from ./mgnl-i18n :
+------------------------------------
+Number of duplicates based on key pattern <key>_<locale>_<bundle-url>: 142
+Number of duplicates based on key pattern <key>_<locale>: 142
+Number of duplicates based on key pattern <key>: 94
+To get more details concerning the keys, raise the log level to 'DEBUG' for info.magnolia.i18nsystem.DefaultMessageBundlesLoader.
+If you encounter a large number of duplicates, it's possible that you are running in a development environment where you have multiple copies of the web-apps in the overlays folder of your web-app.
+URLs of the affected files creating duplicate entries:
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties,file}]}
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties,file}]}
+LayeredResource{path='/mgnl-i18n/scheduler_messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/scheduler_messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_zh_CN.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_zh_CN.properties,file}]}
+LayeredResource{path='/personalization-pages/i18n/personalization-pages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/personalization-pages/i18n/personalization-pages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_es.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_fr.properties,file}]}
+LayeredResource{path='/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties,file}]}
+LayeredResource{path='/travel-demo/i18n/module-travel-demo-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo/i18n/module-travel-demo-messages_ko.properties,file}]}
+LayeredResource{path='/ui-admincentral/i18n/ui-admincentral-messages_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-admincentral/i18n/ui-admincentral-messages_en.properties,file}]}
+LayeredResource{path='/ui-form/i18n/module-ui-form-backend_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-form/i18n/module-ui-form-backend_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_de.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_es.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_fr.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_it.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_it.properties,file}]}
+------------------------------------
+INFO  info.magnolia.i18nsystem.DefaultMessageBundlesLoader 11.02.2022 12:46:09 -- 
+------------------------------------
+Duplicated keys found while loading message bundles from ./mgnl-i18n :
+------------------------------------
+Number of duplicates based on key pattern <key>_<locale>_<bundle-url>: 142
+Number of duplicates based on key pattern <key>_<locale>: 142
+Number of duplicates based on key pattern <key>: 94
+To get more details concerning the keys, raise the log level to 'DEBUG' for info.magnolia.i18nsystem.DefaultMessageBundlesLoader.
+If you encounter a large number of duplicates, it's possible that you are running in a development environment where you have multiple copies of the web-apps in the overlays folder of your web-app.
+URLs of the affected files creating duplicate entries:
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties,file}]}
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties,file}]}
+LayeredResource{path='/mgnl-i18n/scheduler_messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/scheduler_messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_zh_CN.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_zh_CN.properties,file}]}
+LayeredResource{path='/personalization-pages/i18n/personalization-pages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/personalization-pages/i18n/personalization-pages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_es.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_fr.properties,file}]}
+LayeredResource{path='/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties,file}]}
+LayeredResource{path='/travel-demo/i18n/module-travel-demo-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo/i18n/module-travel-demo-messages_ko.properties,file}]}
+LayeredResource{path='/ui-admincentral/i18n/ui-admincentral-messages_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-admincentral/i18n/ui-admincentral-messages_en.properties,file}]}
+LayeredResource{path='/ui-form/i18n/module-ui-form-backend_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-form/i18n/module-ui-form-backend_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_de.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_es.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_fr.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_it.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_it.properties,file}]}
+------------------------------------
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 12:59:54 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:01:00 -- Registered definition from YAML file [/hello-magnolia/dialogs/pages/hello.yaml]: [dialog] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+ERROR info.magnolia.dirwatch.DirectoryWatcher 11.02.2022 13:01:03 -- Exception when executing callback for hello.yaml~: Resource not found: No resource found for path /hello-magnolia/templates/pages/hello.yaml~ in origin layered
+info.magnolia.resourceloader.ResourceOrigin$ResourceNotFoundException: No resource found for path /hello-magnolia/templates/pages/hello.yaml~ in origin layered
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin.getByPath(LayeredResourceOrigin.java:114) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin$RelayingChangeHandler.onResourceChanged(LayeredResourceOrigin.java:274) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.AbstractResourceOrigin.dispatchResourceChange(AbstractResourceOrigin.java:132) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.file.FileWatcherCallback.dispatchResourceChange(FileWatcherCallback.java:118) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.file.FileWatcherCallback.added(FileWatcherCallback.java:78) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.dirwatch.DirectoryWatcher.processEvent(DirectoryWatcher.java:299) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.dirwatch.DirectoryWatcher.run(DirectoryWatcher.java:247) [magnolia-resource-loader-6.2.16.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:01:03 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:01:58 -- Registered definition from YAML file [/hello-magnolia/dialogs/pages/hello.yaml]: [dialog] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:01:58 -- Registered definition from YAML file [/hello-magnolia/dialogs/pages/hello.yaml]: [dialog] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.i18nsystem.DefaultMessageBundlesLoader 11.02.2022 13:07:42 -- 
+------------------------------------
+Duplicated keys found while loading message bundles from ./mgnl-i18n :
+------------------------------------
+Number of duplicates based on key pattern <key>_<locale>_<bundle-url>: 142
+Number of duplicates based on key pattern <key>_<locale>: 142
+Number of duplicates based on key pattern <key>: 94
+To get more details concerning the keys, raise the log level to 'DEBUG' for info.magnolia.i18nsystem.DefaultMessageBundlesLoader.
+If you encounter a large number of duplicates, it's possible that you are running in a development environment where you have multiple copies of the web-apps in the overlays folder of your web-app.
+URLs of the affected files creating duplicate entries:
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/pulse/ui-admincentral-pulse-messages_cs.properties,file}]}
+LayeredResource{path='/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties', layeredResources=[ClasspathResource{origin=classpath,path=/lang-cs/i18n/ui-admincentral/ui-admincentral-messages_cs.properties,file}]}
+LayeredResource{path='/mgnl-i18n/scheduler_messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/scheduler_messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/app-stkTemplateDefsApp-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/standard-templating-kit/shellapp-app-launcher-stk-messages_de.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/shellapp-app-launcher-messages_ja.properties,file}]}
+LayeredResource{path='/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/ui-admincentral/ui-admincentral-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_ko.properties,file}]}
+LayeredResource{path='/mgnl-i18n/workflow/workflow-messages_zh_CN.properties', layeredResources=[ClasspathResource{origin=classpath,path=/mgnl-i18n/workflow/workflow-messages_zh_CN.properties,file}]}
+LayeredResource{path='/personalization-pages/i18n/personalization-pages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/personalization-pages/i18n/personalization-pages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_de.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_es.properties,file}]}
+LayeredResource{path='/publishing-app/i18n/publishing-app-messages_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/publishing-app/i18n/publishing-app-messages_fr.properties,file}]}
+LayeredResource{path='/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo-multisite/i18n/module-travel-demo-multisite-messages_ko.properties,file}]}
+LayeredResource{path='/travel-demo/i18n/module-travel-demo-messages_ko.properties', layeredResources=[ClasspathResource{origin=classpath,path=/travel-demo/i18n/module-travel-demo-messages_ko.properties,file}]}
+LayeredResource{path='/ui-admincentral/i18n/ui-admincentral-messages_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-admincentral/i18n/ui-admincentral-messages_en.properties,file}]}
+LayeredResource{path='/ui-form/i18n/module-ui-form-backend_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-form/i18n/module-ui-form-backend_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_de.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_de.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_en.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_en.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_es.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_es.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_fr.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_fr.properties,file}]}
+LayeredResource{path='/ui-framework-core/i18n/ui-framework_it.properties', layeredResources=[ClasspathResource{origin=classpath,path=/ui-framework-core/i18n/ui-framework_it.properties,file}]}
+------------------------------------
+WARN  info.magnolia.ui.framework.ioc.UiComponentProvider 11.02.2022 13:09:14 -- Attempted to cache a UIComponent (PageDetailSubApp) instance in bean store containing another UIComponent (View)
+WARN  info.magnolia.cms.security.CsrfTokenFilterBase 11.02.2022 13:09:27 -- Possible CSRF Attack. CSRF token not set while user 'anonymous' attempted to access url '/magnoliaPublic/.magnolia/activation'.
+ERROR info.magnolia.publishing.command.PublicationCommand 11.02.2022 13:09:28 -- Receiver: magnoliaPublic8080, error: Unable to contact receiver, HTTP response code: 403.
+info.magnolia.publishing.exception.PublicationException: Unable to contact receiver, HTTP response code: 403.
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:165) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:75) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$2.doRun(AbstractSender.java:295) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$Task.run(AbstractSender.java:317) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78) ~[guava-30.1-jre.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+ERROR info.magnolia.ui.contentapp.browser.ActionExecutionService 11.02.2022 13:09:28 -- An error occurred while executing action [activate]
+info.magnolia.ui.api.action.ActionExecutionException: Action execution failed for action: activate
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:64) ~[magnolia-ui-api-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.ActionExecutionService.executeAction(ActionExecutionService.java:70) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.framework.action.service.CompatibilityActionExecutionService.executeAction(CompatibilityActionExecutionService.java:129) ~[magnolia-ui-framework-compatibility-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarPresenter.fireAction(ActionbarPresenter.java:136) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarView.lambda$initialiseActionbar$3ff1b2f2$1(ActionbarView.java:133) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:706) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:399) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:363) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.AbstractClientConnector.fireEvent(AbstractClientConnector.java:1190) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar.access$000(Actionbar.java:59) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar$1.onActionTriggered(Actionbar.java:71) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:155) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:116) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocation(ServerRpcHandler.java:442) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocations(ServerRpcHandler.java:407) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleRpc(ServerRpcHandler.java:275) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.UidlRequestHandler.synchronizedHandleRequest(UidlRequestHandler.java:91) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:40) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1637) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:464) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.admincentral.AdmincentralServlet.service(AdmincentralServlet.java:119) [magnolia-admincentral-6.2.16.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at info.magnolia.cms.filters.ServletDispatchingFilter.doFilter(ServletDispatchingFilter.java:148) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:98) [magnolia-virtual-uri-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.executor.Bypass.processCacheRequest(Bypass.java:58) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.executor.CompositeExecutor.processCacheRequest(CompositeExecutor.java:66) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:164) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.I18nContentSupportFilter.doFilter(I18nContentSupportFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:78) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:84) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:94) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.filter.GZipFilter.doFilter(GZipFilter.java:74) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:155) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96) [magnolia-core-6.2.16.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) [catalina.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.58]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: com.machinezoo.noexception.WrappedException: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at com.machinezoo.noexception.ExceptionWrapper.handle(ExceptionWrapper.java:11) ~[noexception-1.4.4.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:317) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+Caused by: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at info.magnolia.publishing.command.PublicationCommand.execute(PublicationCommand.java:161) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.commands.MgnlCommand.executeSynchronized(MgnlCommand.java:80) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.MgnlCommand.execute(MgnlCommand.java:69) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.DelegateCommand.execute(DelegateCommand.java:66) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.chain.ChainBase.execute(ChainBase.java:101) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:256) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:244) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:224) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeCommand(CommandAction.java:95) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:313) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+WARN  info.magnolia.cms.security.CsrfTokenFilterBase 11.02.2022 13:09:33 -- Possible CSRF Attack. CSRF token not set while user 'anonymous' attempted to access url '/magnoliaPublic/.magnolia/activation'.
+ERROR info.magnolia.publishing.command.PublicationCommand 11.02.2022 13:09:33 -- Receiver: magnoliaPublic8080, error: Unable to contact receiver, HTTP response code: 403.
+info.magnolia.publishing.exception.PublicationException: Unable to contact receiver, HTTP response code: 403.
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:165) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:75) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$2.doRun(AbstractSender.java:295) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$Task.run(AbstractSender.java:317) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78) ~[guava-30.1-jre.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+ERROR info.magnolia.ui.contentapp.browser.ActionExecutionService 11.02.2022 13:09:33 -- An error occurred while executing action [activate]
+info.magnolia.ui.api.action.ActionExecutionException: Action execution failed for action: activate
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:64) ~[magnolia-ui-api-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.ActionExecutionService.executeAction(ActionExecutionService.java:70) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.framework.action.service.CompatibilityActionExecutionService.executeAction(CompatibilityActionExecutionService.java:129) ~[magnolia-ui-framework-compatibility-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarPresenter.fireAction(ActionbarPresenter.java:136) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarView.lambda$initialiseActionbar$3ff1b2f2$1(ActionbarView.java:133) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:706) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:399) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:363) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.AbstractClientConnector.fireEvent(AbstractClientConnector.java:1190) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar.access$000(Actionbar.java:59) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar$1.onActionTriggered(Actionbar.java:71) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:155) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:116) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocation(ServerRpcHandler.java:442) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocations(ServerRpcHandler.java:407) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleRpc(ServerRpcHandler.java:275) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.UidlRequestHandler.synchronizedHandleRequest(UidlRequestHandler.java:91) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:40) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1637) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:464) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.admincentral.AdmincentralServlet.service(AdmincentralServlet.java:119) [magnolia-admincentral-6.2.16.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at info.magnolia.cms.filters.ServletDispatchingFilter.doFilter(ServletDispatchingFilter.java:148) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:98) [magnolia-virtual-uri-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.executor.Bypass.processCacheRequest(Bypass.java:58) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.executor.CompositeExecutor.processCacheRequest(CompositeExecutor.java:66) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:164) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.I18nContentSupportFilter.doFilter(I18nContentSupportFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:78) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:84) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:94) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.filter.GZipFilter.doFilter(GZipFilter.java:74) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:155) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96) [magnolia-core-6.2.16.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) [catalina.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.58]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: com.machinezoo.noexception.WrappedException: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at com.machinezoo.noexception.ExceptionWrapper.handle(ExceptionWrapper.java:11) ~[noexception-1.4.4.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:317) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+Caused by: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at info.magnolia.publishing.command.PublicationCommand.execute(PublicationCommand.java:161) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.commands.MgnlCommand.executeSynchronized(MgnlCommand.java:80) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.MgnlCommand.execute(MgnlCommand.java:69) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.DelegateCommand.execute(DelegateCommand.java:66) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.chain.ChainBase.execute(ChainBase.java:101) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:256) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:244) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:224) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeCommand(CommandAction.java:95) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:313) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+WARN  info.magnolia.cms.security.CsrfTokenFilterBase 11.02.2022 13:09:37 -- Possible CSRF Attack. CSRF token not set while user 'anonymous' attempted to access url '/magnoliaPublic/.magnolia/activation'.
+ERROR info.magnolia.publishing.command.PublicationCommand 11.02.2022 13:09:37 -- Receiver: magnoliaPublic8080, error: Unable to contact receiver, HTTP response code: 403.
+info.magnolia.publishing.exception.PublicationException: Unable to contact receiver, HTTP response code: 403.
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:165) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.operation.HttpPublicationOperation.execute(HttpPublicationOperation.java:75) ~[magnolia-publishing-sender-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$2.doRun(AbstractSender.java:295) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.publishing.sender.AbstractSender$Task.run(AbstractSender.java:317) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69) ~[guava-30.1-jre.jar:?]
+	at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78) ~[guava-30.1-jre.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+ERROR info.magnolia.ui.contentapp.browser.ActionExecutionService 11.02.2022 13:09:37 -- An error occurred while executing action [activate]
+info.magnolia.ui.api.action.ActionExecutionException: Action execution failed for action: activate
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:64) ~[magnolia-ui-api-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.ActionExecutionService.executeAction(ActionExecutionService.java:70) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.framework.action.service.CompatibilityActionExecutionService.executeAction(CompatibilityActionExecutionService.java:129) ~[magnolia-ui-framework-compatibility-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarPresenter.fireAction(ActionbarPresenter.java:136) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.browser.actions.ActionbarView.lambda$initialiseActionbar$3ff1b2f2$1(ActionbarView.java:133) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.event.ListenerMethod.receiveEvent(ListenerMethod.java:706) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:399) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.event.EventRouter.fireEvent(EventRouter.java:363) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.AbstractClientConnector.fireEvent(AbstractClientConnector.java:1190) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar.access$000(Actionbar.java:59) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at info.magnolia.ui.vaadin.actionbar.Actionbar$1.onActionTriggered(Actionbar.java:71) [magnolia-ui-vaadin-common-widgets-6.2.16.jar:6.2.16]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:155) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.ServerRpcManager.applyInvocation(ServerRpcManager.java:116) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocation(ServerRpcHandler.java:442) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleInvocations(ServerRpcHandler.java:407) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.ServerRpcHandler.handleRpc(ServerRpcHandler.java:275) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.communication.UidlRequestHandler.synchronizedHandleRequest(UidlRequestHandler.java:91) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.SynchronizedRequestHandler.handleRequest(SynchronizedRequestHandler.java:40) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinService.handleRequest(VaadinService.java:1637) [vaadin-server-8.14.1.jar:8.14.1]
+	at com.vaadin.server.VaadinServlet.service(VaadinServlet.java:464) [vaadin-server-8.14.1.jar:8.14.1]
+	at info.magnolia.admincentral.AdmincentralServlet.service(AdmincentralServlet.java:119) [magnolia-admincentral-6.2.16.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) [servlet-api.jar:4.0.FR]
+	at info.magnolia.cms.filters.ServletDispatchingFilter.doFilter(ServletDispatchingFilter.java:148) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.virtualuri.VirtualUriFilter.doFilter(VirtualUriFilter.java:98) [magnolia-virtual-uri-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.executor.Bypass.processCacheRequest(Bypass.java:58) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.executor.CompositeExecutor.processCacheRequest(CompositeExecutor.java:66) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.module.cache.filter.CacheFilter.doFilter(CacheFilter.java:164) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.i18n.I18nContentSupportFilter.doFilter(I18nContentSupportFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.RangeSupportFilter.doFilter(RangeSupportFilter.java:78) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.BaseSecurityFilter.doFilter(BaseSecurityFilter.java:57) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.SecurityCallbackFilter.doFilter(SecurityCallbackFilter.java:84) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.LogoutFilter.doFilter(LogoutFilter.java:94) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MultiChannelFilter.doFilter(MultiChannelFilter.java:83) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.module.cache.filter.GZipFilter.doFilter(GZipFilter.java:74) [magnolia-cache-core-5.9.4.jar:?]
+	at info.magnolia.cms.filters.OncePerRequestAbstractMgnlFilter.doFilter(OncePerRequestAbstractMgnlFilter.java:59) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.security.auth.login.LoginFilter.doFilter(LoginFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:81) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContentTypeFilter.doFilter(ContentTypeFilter.java:155) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.ContextFilter.doFilter(ContextFilter.java:128) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterChain.doFilter(MgnlFilterChain.java:79) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.CompositeFilter.doFilter(CompositeFilter.java:75) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.AbstractMgnlFilter.doFilter(AbstractMgnlFilter.java:85) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.SafeDestroyMgnlFilterWrapper.doFilter(SafeDestroyMgnlFilterWrapper.java:107) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlFilterDispatcher.doDispatch(MgnlFilterDispatcher.java:67) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:110) [magnolia-core-6.2.16.jar:?]
+	at info.magnolia.cms.filters.MgnlMainFilter.doFilter(MgnlMainFilter.java:96) [magnolia-core-6.2.16.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.58]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.58]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.58]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.58]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:359) [catalina.jar:9.0.58]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.58]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1735) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.58]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.58]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: com.machinezoo.noexception.WrappedException: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at com.machinezoo.noexception.ExceptionWrapper.handle(ExceptionWrapper.java:11) ~[noexception-1.4.4.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:317) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+Caused by: info.magnolia.publishing.exception.PublicationException: <ul><li>magnoliaPublic8080: Unable to contact receiver, HTTP response code: 403.</li></ul>
+	at info.magnolia.publishing.command.PublicationCommand.execute(PublicationCommand.java:161) ~[magnolia-publishing-core-1.3.3.jar:?]
+	at info.magnolia.commands.MgnlCommand.executeSynchronized(MgnlCommand.java:80) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.MgnlCommand.execute(MgnlCommand.java:69) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.DelegateCommand.execute(DelegateCommand.java:66) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.chain.ChainBase.execute(ChainBase.java:101) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:256) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:244) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.commands.CommandsManager.executeCommand(CommandsManager.java:224) ~[magnolia-core-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeCommand(CommandAction.java:95) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at com.machinezoo.noexception.CheckedExceptionHandler$CheckedConsumer.accept(CheckedExceptionHandler.java:313) ~[noexception-1.4.4.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1541) ~[?:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.executeSynchronously(CommandAction.java:116) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.contentapp.action.CommandAction.execute(CommandAction.java:80) ~[magnolia-ui-framework-6.2.16.jar:?]
+	at info.magnolia.ui.api.action.AbstractActionExecutor.execute(AbstractActionExecutor.java:62) ~[magnolia-ui-api-6.2.16.jar:?]
+	... 106 more
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/templates/components/quotation.yaml]: [template] definition [quotation] with reference id: [hello-magnolia:components/quotation] from module [hello-magnolia] at [components/quotation]
+WARN  info.magnolia.config.resolver.AnnotationProcessingTypeResolver 11.02.2022 13:54:07 -- Encountered the '$type' property but failed to resolved the type from its value: [damLinkField]. Available types: [jcrMultiField,radioButtonGroupField,pageLinkField,staticField,textField,comboBoxField,checkBoxField,twinColSelectField,multiField,switchableField,checkBoxGroupField,jcrMultiLinkField,passwordField,compositeField,listSelectField,richTextField,codeField,resourceLinkField,tokenField,dateField,linkField,uploadField,sliderField,jcrMultiValueField,hiddenField]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/dialogs/components/quotation.yaml]: [dialog] definition [quotation] with reference id: [hello-magnolia:components/quotation] from module [hello-magnolia] at [components/quotation]
+WARN  info.magnolia.config.resolver.AnnotationProcessingTypeResolver 11.02.2022 13:54:07 -- Encountered the '$type' property but failed to resolved the type from its value: [damLinkField]. Available types: [jcrMultiField,radioButtonGroupField,pageLinkField,staticField,textField,comboBoxField,checkBoxField,twinColSelectField,multiField,switchableField,checkBoxGroupField,jcrMultiLinkField,passwordField,compositeField,listSelectField,richTextField,codeField,resourceLinkField,tokenField,dateField,linkField,uploadField,sliderField,jcrMultiValueField,hiddenField]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/dialogs/components/quotation.yaml]: [dialog] definition [quotation] with reference id: [hello-magnolia:components/quotation] from module [hello-magnolia] at [components/quotation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 13:54:07 -- Registered definition from YAML file [/hello-magnolia/templates/components/quotation.yaml]: [template] definition [quotation] with reference id: [hello-magnolia:components/quotation] from module [hello-magnolia] at [components/quotation]
+ERROR info.magnolia.dirwatch.DirectoryWatcher 11.02.2022 14:02:50 -- Exception when executing callback for quotation.yaml~: Resource not found: No resource found for path /hello-magnolia/dialogs/components/quotation.yaml~ in origin filesystem
+info.magnolia.resourceloader.ResourceOrigin$ResourceNotFoundException: No resource found for path /hello-magnolia/dialogs/components/quotation.yaml~ in origin filesystem
+	at info.magnolia.resourceloader.file.FileSystemResourceOrigin.getByPath(FileSystemResourceOrigin.java:129) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.file.FileSystemResourceOrigin.getByPath(FileSystemResourceOrigin.java:73) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin.lambda$getByPath$1(LayeredResourceOrigin.java:111) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195) ~[?:?]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177) ~[?:?]
+	at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578) ~[?:?]
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin.getByPath(LayeredResourceOrigin.java:112) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin.getByPath(LayeredResourceOrigin.java:72) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.config.source.yaml.AbstractFileResourceConfigurationSource.lambda$startDecoration$3(AbstractFileResourceConfigurationSource.java:187) ~[magnolia-configuration-6.2.16.jar:?]
+	at info.magnolia.resourceloader.layered.LayeredResourceOrigin$RelayingChangeHandler.onResourceChanged(LayeredResourceOrigin.java:284) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.AbstractResourceOrigin.dispatchResourceChange(AbstractResourceOrigin.java:132) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.file.FileWatcherCallback.dispatchResourceChange(FileWatcherCallback.java:118) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.resourceloader.file.FileWatcherCallback.modified(FileWatcherCallback.java:89) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.dirwatch.DirectoryWatcher.processEvent(DirectoryWatcher.java:303) ~[magnolia-resource-loader-6.2.16.jar:?]
+	at info.magnolia.dirwatch.DirectoryWatcher.run(DirectoryWatcher.java:247) [magnolia-resource-loader-6.2.16.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:02:50 -- Registered definition from YAML file [/hello-magnolia/dialogs/components/quotation.yaml]: [dialog] definition [quotation] with reference id: [hello-magnolia:components/quotation] from module [hello-magnolia] at [components/quotation]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:11:46 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+INFO  info.magnolia.config.source.yaml.YamlConfigurationSource 11.02.2022 14:16:02 -- Registered definition from YAML file [/hello-magnolia/templates/pages/hello.yaml]: [template] definition [hello] with reference id: [hello-magnolia:pages/hello] from module [hello-magnolia] at [pages/hello]
+WARN  info.magnolia.ui.framework.ioc.UiComponentProvider 11.02.2022 14:20:25 -- Attempted to cache a UIComponent (PageDetailSubApp) instance in bean store containing another UIComponent (View)
